@@ -12,10 +12,12 @@ class AbstractTrain
     @train_speed = 0
     @current_station_index = 0
     @@instances[train_number] = self
+    validate!
   end
 
   def validate!
     raise "Incorrect number of train" if train_number !~ NUMBER_FORMAT
+    true
   end
 
   def each_carrige

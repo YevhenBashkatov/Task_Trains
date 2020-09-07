@@ -97,10 +97,10 @@ class Main
   end
 
   def test_data
-    train_cargo1 = CargoTrain.new(301)
-    train_cargo2 = CargoTrain.new(333)
-    train_passenger1 = PassengerTrain.new(211)
-    train_passenger2 = PassengerTrain.new(212)
+    train_cargo1 = CargoTrain.new("crg-21")
+    train_cargo2 = CargoTrain.new("crg-22")
+    train_passenger1 = PassengerTrain.new("pas-10")
+    train_passenger2 = PassengerTrain.new("pas-19")
     station1 = Station.new("Uzlova")
     station2 = Station.new("Kh-Pass")
     count = 0
